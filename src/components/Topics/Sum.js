@@ -25,10 +25,11 @@ class Sum extends Component {
         });
     }
 
-    //Method to solve problem
-    // addNum(num1, num2) {
-    //This method should update the value of sum.
-    // }
+    addNum(num1, num2) {
+        let answer = num1 + num2;
+
+        this.setState({sum: answer})
+    }
 
 
 
