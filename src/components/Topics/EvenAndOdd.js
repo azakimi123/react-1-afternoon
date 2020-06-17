@@ -16,9 +16,10 @@ class EvenAndOdd extends Component {
       })
   }
 
-  assignEvenAndOdds = (userInput) {
+  //Method for solving toy problem goes here
+  // assignEvenAndOdds = (userInput) {
 
-  }
+  // }
 
   render() {
     return (
