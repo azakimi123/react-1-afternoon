@@ -6,7 +6,7 @@ class FilterString extends Component {
     constructor() {
         super();
         this.state = {
-            unFilteredArray: ['red', 'blue', 'purple', 'green', 'yellow', 'orange'],
+            unFilteredArray: ['red', 'blue', 'purple', 'green', 'rose', 'orange', 'pink'],
             userInput: '',
             filteredArray: []
         };
@@ -19,9 +19,17 @@ class FilterString extends Component {
     }
 
     //Method to filter array
-    // filterArray() {
+    filterArray(input) {
+        let arr = [];
+        for (let i = 0; i < this.state.unFilteredArray.length; i++) {
+            if (this.state.unFilteredArray[i].includes(input)) {
+                arr.push(this.state.unFilteredArray[i]);
 
-    // }
+                this.setState({ filteredArray: arr })
+            }
+        }
+
+    }
 
 
 

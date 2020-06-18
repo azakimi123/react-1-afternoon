@@ -19,9 +19,18 @@ class Palindrome extends Component {
 
 
     //Method to solve problem
-    // result(input) {
-    //This method should update the value of palindrome.
-    // }
+    result(input) {
+        let result = 'false';
+        let splitArr = input.split('');
+        let reversedArr = splitArr.reverse();
+        let newStr = reversedArr.join('');
+
+        if (newStr === input) {
+            result = 'true';
+        }
+
+        this.setState({ palindrome: result });
+    }
 
 
 

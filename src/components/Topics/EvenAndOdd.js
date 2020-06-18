@@ -25,7 +25,7 @@ export default class EvenAndOdd extends Component {
       if ( arr[i] % 2 === 0 ) {
         evenNum.push( parseInt(arr[i], 10) );
       } else {
-        oddNum.push( parseInt(arr[i]) );
+        oddNum.push( parseInt(arr[i], 10) );
       }
     }
 
